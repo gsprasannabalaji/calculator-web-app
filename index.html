@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="home">
+    <h1>Login</h1>
+    <form class="form" id="loginForm" method="post">
+
+        <label for="email" class="form__label">Email Address <span class="form__required">*</span></label>
+        <input type="email" placeholder="Enter an email address" name="email" id="email" class="form__input">
+        <div id="emailError" class="form__error"></div>
+
+        <label for="username" class="form__label">Username <span class="form__required">*</span></label>
+        <input type="text" placeholder="Username" name="username" id="username" class="form__input">
+        <div id="usernameError" class="form__error"></div>
+
+        <label for="password" class="form__label">Password <span class="form__required">*</span></label>
+        <input type="password" placeholder="Password" name="password" id="password" class="form__input">
+        <div id="passwordError" class="form__error"></div>
+
+        <label for="confirmPassword" class="form__label">Confirm Password <span class="form__required">*</span></label>
+        <input type="password" placeholder="Re type your password" name="confirmPassword" id="confirmPassword" class="form__input">
+        <div id="confirmPasswordError" class="form__error"></div>
+
+        <button id="loginButton" disabled>Login</button>
+    </form>
+
+    <script type="text/javascript" src="./login.js"></script>
+</body>
+
+</html>

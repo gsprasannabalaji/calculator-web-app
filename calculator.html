@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="calculator">
+    <h1 id="welcome-message" class="welcome-message"></h1>
+    <section class="calculator__container">
+        <label for="number1" class="form__label">Number 1 <span class="form__required">*</span></label>
+        <input type="text" id="number1" class="form__input">
+        <div id="number1Error" class="error-message"></div>
+        <label for="number2" class="form__label">Number 2 <span class="form__required">*</span></label>
+        <input type="text" id="number2"  class="form__input">
+        <div id="number2Error" class="error-message"></div>
+        <label for="result" class="form__label">Result</label>
+        <input type="text" id="result" disabled  class="form__input">
+        <div class="calculator__cta-wrapper">
+            <button id="add" data-operation="+" class="calculator__cta">Add</button>
+            <button id="subtract" data-operation="-" class="calculator__cta">Subtract</button>
+            <button id="multiply" data-operation="*" class="calculator__cta">Multiply</button>
+            <button id="divide" data-operation="/" class="calculator__cta">Divide</button>
+        </div>
+    </section>
+    <script type="text/javascript" src="./calculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+.form__error, .error-message {
+    color: red;
+    margin: 0 0 8px 0;
+}
+
+.form__input, .form__label {
+    display: block;
+    margin: 0 0 8px 0;
+}
+
+.form__label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form__input {
+    padding: 4px;
+    width: -webkit-fill-available;
+}
+
+.form {
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 16px;
+    width: 300px;
+}
+
+.form__required {
+    color: red;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator__container {
+    background-color: wheat;
+    border: 1px solid grey;
+    padding: 16px;
+    margin: 20px;
+}
+
+#result {
+    margin: 0 0 24px;
+}
+
+.calculator__cta {
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 8px;
+}
+
+.welcome-message {
+    color: indigo;
+}
+
+#loginButton {
+    margin: 12px 0 0 0;
+}
+
+.calculator__cta-wrapper {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
