@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('#welcome-message').text(`Welcome, ${sessionStorage.getItem('username')}`);
     $(".error-message").hide();
-    let regex = /^[+-]?([0-9]*[.])?[0-9]+$/;
+    let regex = /^[0-9.]+$/;
 
     const validate = (num, errorId) => {
         if(num === '') {
