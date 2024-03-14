@@ -2,9 +2,9 @@ $(document).ready(function () {
 
     $('#welcome-message').text(`Welcome, ${sessionStorage.getItem('username')}`);
     $(".error-message").hide();
+    let regex = /^[+-]?([0-9]*[.])?[0-9]+$/;
 
     const validate = (num, errorId) => {
-        let regex = /^[0-9.eE+-]+$/g;
         if(num === '') {
             $(errorId).text(`${errorId == "#number1Error" ? 'Number 1' : 'Number 2'} is required.`);
             $(errorId).show();
@@ -26,7 +26,7 @@ $(document).ready(function () {
         validate(num1, "#number1Error");
         validate(num2, "#number2Error");
 
-        if(num1 !== '' && num2 !== '' && isFinite(parseFloat(num1)) && isFinite(parseFloat(num2))) {
+        if(num1 !== '' && num2 !== '' && isFinite(parseFloat(num1)) && isFinite(parseFloat(num2)) && regex.test(num1) && regex.test(num2)) {
             isValid = true;
             $(".error-message").hide();
         }
