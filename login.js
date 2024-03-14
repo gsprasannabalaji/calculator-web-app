@@ -9,7 +9,7 @@ $(document).ready(function () {
   $("#email").val('');
   $("#username").val('');
 
-  $(".form__error").prop("display", "none");
+  $(".form__error").hide();
 
   const northeasternEmailRegex = /^[a-zA-Z0-9._%+-]+@northeastern\.edu$/;
 
@@ -116,6 +116,7 @@ $(document).ready(function () {
     if($('#confirmPassword').val()!== "") {
         const confirmPassError = confirmPasswordValidation();
         $("#confirmPasswordError").text(confirmPassError);
+        $("#confirmPasswordError").show();
     }
     updateLoginButtonState();
   });
@@ -123,6 +124,9 @@ $(document).ready(function () {
   $("#confirmPassword").on("input", function () {
     const confirmPassError = confirmPasswordValidation();
     $("#confirmPasswordError").text(confirmPassError);
+    if(confirmPassError !== "") {
+      $("#confirmPasswordError").show();
+    }
     updateLoginButtonState();
   });
 

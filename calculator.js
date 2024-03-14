@@ -73,7 +73,6 @@ $(document).ready(function () {
                 default:
                     break;
             }
-            // result = Number.isInteger(result)? result : result.toFixed(2);
             $('#result').val(result);
         }
     });
